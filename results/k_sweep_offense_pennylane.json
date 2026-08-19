@@ -1,0 +1,92 @@
+{
+  "note": "Quantum を本物の PennyLane 回路版へ差し替えて再計算した K スイープ",
+  "quantum_checkpoint": "/home/ks/QuAic/backend/data/experiments/pennylane_quantum_300_cnot.pth",
+  "policy": "experiments/handyrl/color_aware/handyrl_perfect_info_color_aware_resnet_4blk_20260716_142543/best_model.pth",
+  "oracle": 0.9628571428571429,
+  "results": [
+    {
+      "k": 1,
+      "scores": {
+        "HistoryGRUColorEstimator": 0.8350510204081633,
+        "MLPColorEstimator": 0.8392857142857143,
+        "ResNetColorEstimator": 0.851326530612245,
+        "QuantumColorEstimator": 0.8601530612244898,
+        "LowParamColorEstimator": 0.5762755102040816
+      },
+      "band_width": 0.0251020408163265,
+      "quantum_previous": 0.7877551020408163,
+      "band_width_previous": 0.06357142857142861,
+      "elapsed": 115.0
+    },
+    {
+      "k": 3,
+      "scores": {
+        "HistoryGRUColorEstimator": 0.8433673469387755,
+        "MLPColorEstimator": 0.8527040816326531,
+        "ResNetColorEstimator": 0.8417857142857142,
+        "QuantumColorEstimator": 0.8511224489795919,
+        "LowParamColorEstimator": 0.660765306122449
+      },
+      "band_width": 0.010918367346938851,
+      "quantum_previous": 0.7835204081632653,
+      "band_width_previous": 0.06918367346938781,
+      "elapsed": 134.0
+    },
+    {
+      "k": 5,
+      "scores": {
+        "HistoryGRUColorEstimator": 0.838469387755102,
+        "MLPColorEstimator": 0.8483673469387755,
+        "ResNetColorEstimator": 0.8319387755102041,
+        "QuantumColorEstimator": 0.8441326530612245,
+        "LowParamColorEstimator": 0.669795918367347
+      },
+      "band_width": 0.016428571428571348,
+      "quantum_previous": 0.763061224489796,
+      "band_width_previous": 0.0853061224489795,
+      "elapsed": 144.0
+    },
+    {
+      "k": 10,
+      "scores": {
+        "HistoryGRUColorEstimator": 0.834234693877551,
+        "MLPColorEstimator": 0.8455612244897959,
+        "ResNetColorEstimator": 0.8355102040816327,
+        "QuantumColorEstimator": 0.8423469387755103,
+        "LowParamColorEstimator": 0.5659183673469388
+      },
+      "band_width": 0.011326530612244867,
+      "quantum_previous": 0.7445918367346939,
+      "band_width_previous": 0.100969387755102,
+      "elapsed": 185.0
+    },
+    {
+      "k": 20,
+      "scores": {
+        "HistoryGRUColorEstimator": 0.8294387755102041,
+        "MLPColorEstimator": 0.8456122448979592,
+        "ResNetColorEstimator": 0.8265816326530612,
+        "QuantumColorEstimator": 0.8341326530612245,
+        "LowParamColorEstimator": 0.5564795918367347
+      },
+      "band_width": 0.019030612244897993,
+      "quantum_previous": 0.735204081632653,
+      "band_width_previous": 0.11040816326530611,
+      "elapsed": 275.0
+    },
+    {
+      "k": 30,
+      "scores": {
+        "HistoryGRUColorEstimator": 0.833265306122449,
+        "MLPColorEstimator": 0.8348469387755102,
+        "ResNetColorEstimator": 0.8239285714285715,
+        "QuantumColorEstimator": 0.837295918367347,
+        "LowParamColorEstimator": 0.656734693877551
+      },
+      "band_width": 0.013367346938775504,
+      "quantum_previous": 0.7435204081632653,
+      "band_width_previous": 0.09132653061224494,
+      "elapsed": 389.0
+    }
+  ]
+}

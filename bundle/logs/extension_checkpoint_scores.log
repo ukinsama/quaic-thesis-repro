@@ -1,0 +1,17 @@
+[ 153.6s] histlen_gru_h4.pth                 score=0.8044 (期待 0.804)  一致  W-L-D=7687-1721-392
+[ 146.6s] histlen_gru_h8.pth                 score=0.8287 (期待 0.829)  一致  W-L-D=7984-1542-274
+[ 146.3s] histlen_gru_h12.pth                score=0.8266 (期待 0.827)  一致  W-L-D=8006-1604-190
+[ 160.3s] histlen_gru_h16.pth                score=0.8464 (期待 0.846)  一致  W-L-D=8121-1332-347
+[ 170.5s] histlen_gru_h24.pth                score=0.8349 (期待 0.835)  一致  W-L-D=8030-1466-304
+[ 136.9s] worldaware_gru_lam000.pth          score=0.8182 (期待 0.818)  一致  W-L-D=7930-1693-177
+[ 144.7s] worldaware_gru_lam030.pth          score=0.8278 (期待 0.828)  一致  W-L-D=7991-1567-242
+[ 136.0s] worldaware_gru_lam050.pth          score=0.8250 (期待 0.825)  一致  W-L-D=8009-1639-152
+[ 147.4s] worldaware_gru_lam070.pth          score=0.8171 (期待 0.817)  一致  W-L-D=7893-1678-229
+[ 162.3s] expanded_quantum_q6l3.pth          score=0.7848 (期待 0.785)  一致  W-L-D=7441-1859-500
+[ 265.2s] quantum_history_gru_cz_h16.pth     score=0.8084 (期待 0.808)  一致  W-L-D=7816-1772-212
+[ 339.7s] quantum_history_gru_cnot_h16.pth   score=0.7877 (期待 0.788)  一致  W-L-D=7295-1657-848
+[ 273.3s] gate_sweep_cz_s7.pth               score=0.8211 (期待 None)  ――  W-L-D=7794-1500-506
+[ 289.5s] gate_sweep_cz_s99.pth              score=0.8069 (期待 None)  ――  W-L-D=7597-1582-621
+[ 332.6s] gate_sweep_cnot_s7.pth             score=0.7611 (期待 None)  ――  W-L-D=6950-1832-1018
+[ 288.6s] gate_sweep_cnot_s99.pth            score=0.7935 (期待 None)  ――  W-L-D=7458-1705-637
+[write] /home/ks/QuAic/backend/data/experiments/extension_checkpoint_scores.json

@@ -1,0 +1,273 @@
+{
+  "note": "Quantum を本物の PennyLane 回路版へ差し替えて再計算した Elo リーグ",
+  "quantum_checkpoint": "/home/ks/QuAic/backend/data/experiments/pennylane_quantum_300_cnot.pth",
+  "policy": "experiments/handyrl/best/handyrl_perfect_info_color_aware_resnet_4blk_20260204_145150_RECOVERED/best_model.pth",
+  "roster": {
+    "RandomColorEstimator": [
+      "Random",
+      1
+    ],
+    "OracleColorEstimator": [
+      "Oracle",
+      1
+    ],
+    "MLPColorEstimator": [
+      "MLPColorEstimator",
+      5
+    ],
+    "ResNetColorEstimator": [
+      "ResNetColorEstimator",
+      5
+    ],
+    "QuantumColorEstimator": [
+      "QuantumColorEstimator",
+      5
+    ],
+    "HistoryGRUColorEstimator": [
+      "HistoryGRUColorEstimator",
+      5
+    ],
+    "LowParamColorEstimator": [
+      "LowParamColorEstimator",
+      5
+    ]
+  },
+  "pair_results": [
+    {
+      "a": "RandomColorEstimator",
+      "b": "OracleColorEstimator",
+      "wins": 210,
+      "losses": 8855,
+      "draws": 735,
+      "n": 9800,
+      "score_a": 0.05892857142857143,
+      "source": "cached"
+    },
+    {
+      "a": "RandomColorEstimator",
+      "b": "MLPColorEstimator",
+      "wins": 1675,
+      "losses": 7125,
+      "draws": 1000,
+      "n": 9800,
+      "score_a": 0.22193877551020408,
+      "source": "cached"
+    },
+    {
+      "a": "RandomColorEstimator",
+      "b": "ResNetColorEstimator",
+      "wins": 1733,
+      "losses": 6886,
+      "draws": 1181,
+      "n": 9800,
+      "score_a": 0.2370918367346939,
+      "source": "cached"
+    },
+    {
+      "a": "RandomColorEstimator",
+      "b": "HistoryGRUColorEstimator",
+      "wins": 1590,
+      "losses": 7251,
+      "draws": 959,
+      "n": 9800,
+      "score_a": 0.2111734693877551,
+      "source": "cached"
+    },
+    {
+      "a": "RandomColorEstimator",
+      "b": "LowParamColorEstimator",
+      "wins": 2393,
+      "losses": 3444,
+      "draws": 3963,
+      "n": 9800,
+      "score_a": 0.44637755102040816,
+      "source": "cached"
+    },
+    {
+      "a": "OracleColorEstimator",
+      "b": "MLPColorEstimator",
+      "wins": 5736,
+      "losses": 3930,
+      "draws": 134,
+      "n": 9800,
+      "score_a": 0.5921428571428572,
+      "source": "cached"
+    },
+    {
+      "a": "OracleColorEstimator",
+      "b": "ResNetColorEstimator",
+      "wins": 6222,
+      "losses": 3442,
+      "draws": 136,
+      "n": 9800,
+      "score_a": 0.6418367346938776,
+      "source": "cached"
+    },
+    {
+      "a": "OracleColorEstimator",
+      "b": "HistoryGRUColorEstimator",
+      "wins": 5766,
+      "losses": 3896,
+      "draws": 138,
+      "n": 9800,
+      "score_a": 0.5954081632653061,
+      "source": "cached"
+    },
+    {
+      "a": "OracleColorEstimator",
+      "b": "LowParamColorEstimator",
+      "wins": 9008,
+      "losses": 307,
+      "draws": 485,
+      "n": 9800,
+      "score_a": 0.9439285714285715,
+      "source": "cached"
+    },
+    {
+      "a": "MLPColorEstimator",
+      "b": "ResNetColorEstimator",
+      "wins": 4976,
+      "losses": 4556,
+      "draws": 268,
+      "n": 9800,
+      "score_a": 0.5214285714285715,
+      "source": "cached"
+    },
+    {
+      "a": "MLPColorEstimator",
+      "b": "HistoryGRUColorEstimator",
+      "wins": 4733,
+      "losses": 4855,
+      "draws": 212,
+      "n": 9800,
+      "score_a": 0.4937755102040816,
+      "source": "cached"
+    },
+    {
+      "a": "MLPColorEstimator",
+      "b": "LowParamColorEstimator",
+      "wins": 7364,
+      "losses": 1731,
+      "draws": 705,
+      "n": 9800,
+      "score_a": 0.7873979591836735,
+      "source": "cached"
+    },
+    {
+      "a": "ResNetColorEstimator",
+      "b": "HistoryGRUColorEstimator",
+      "wins": 4419,
+      "losses": 5152,
+      "draws": 229,
+      "n": 9800,
+      "score_a": 0.46260204081632655,
+      "source": "cached"
+    },
+    {
+      "a": "ResNetColorEstimator",
+      "b": "LowParamColorEstimator",
+      "wins": 7401,
+      "losses": 1689,
+      "draws": 710,
+      "n": 9800,
+      "score_a": 0.7914285714285715,
+      "source": "cached"
+    },
+    {
+      "a": "HistoryGRUColorEstimator",
+      "b": "LowParamColorEstimator",
+      "wins": 7693,
+      "losses": 1535,
+      "draws": 572,
+      "n": 9800,
+      "score_a": 0.8141836734693878,
+      "source": "cached"
+    },
+    {
+      "a": "RandomColorEstimator",
+      "b": "QuantumColorEstimator",
+      "wins": 1704,
+      "losses": 7097,
+      "draws": 999,
+      "n": 9800,
+      "score_a": 0.2248469387755102,
+      "source": "rerun_pennylane"
+    },
+    {
+      "a": "OracleColorEstimator",
+      "b": "QuantumColorEstimator",
+      "wins": 6261,
+      "losses": 3385,
+      "draws": 154,
+      "n": 9800,
+      "score_a": 0.646734693877551,
+      "source": "rerun_pennylane"
+    },
+    {
+      "a": "MLPColorEstimator",
+      "b": "QuantumColorEstimator",
+      "wins": 5158,
+      "losses": 4406,
+      "draws": 236,
+      "n": 9800,
+      "score_a": 0.5383673469387755,
+      "source": "rerun_pennylane"
+    },
+    {
+      "a": "ResNetColorEstimator",
+      "b": "QuantumColorEstimator",
+      "wins": 4773,
+      "losses": 4796,
+      "draws": 231,
+      "n": 9800,
+      "score_a": 0.4988265306122449,
+      "source": "rerun_pennylane"
+    },
+    {
+      "a": "QuantumColorEstimator",
+      "b": "HistoryGRUColorEstimator",
+      "wins": 4419,
+      "losses": 5202,
+      "draws": 179,
+      "n": 9800,
+      "score_a": 0.46005102040816326,
+      "source": "rerun_pennylane"
+    },
+    {
+      "a": "QuantumColorEstimator",
+      "b": "LowParamColorEstimator",
+      "wins": 7287,
+      "losses": 1908,
+      "draws": 605,
+      "n": 9800,
+      "score_a": 0.7744387755102041,
+      "source": "rerun_pennylane"
+    }
+  ],
+  "elo": {
+    "RandomColorEstimator": 1309.9637047639776,
+    "OracleColorEstimator": 1660.8252503414337,
+    "MLPColorEstimator": 1562.073680276147,
+    "ResNetColorEstimator": 1542.4916586469005,
+    "QuantumColorEstimator": 1539.4972596917626,
+    "HistoryGRUColorEstimator": 1569.3427416733452,
+    "LowParamColorEstimator": 1315.8057046064337
+  },
+  "score_vs_random": {
+    "OracleColorEstimator": 0.9410714285714286,
+    "MLPColorEstimator": 0.778061224489796,
+    "ResNetColorEstimator": 0.7629081632653061,
+    "HistoryGRUColorEstimator": 0.7888265306122448,
+    "LowParamColorEstimator": 0.5536224489795918,
+    "QuantumColorEstimator": 0.7751530612244898
+  },
+  "elo_previous": {
+    "RandomColorEstimator": 1317.5827228903847,
+    "OracleColorEstimator": 1669.233347803087,
+    "MLPColorEstimator": 1568.9760852550364,
+    "ResNetColorEstimator": 1552.8731043807015,
+    "QuantumColorEstimator": 1486.330574191534,
+    "HistoryGRUColorEstimator": 1579.0368357545303,
+    "LowParamColorEstimator": 1325.9673297247264
+  }
+}

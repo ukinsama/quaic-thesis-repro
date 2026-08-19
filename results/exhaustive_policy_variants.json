@@ -1,0 +1,72 @@
+[
+  {
+    "estimator": "OracleColorEstimator",
+    "policy": "experiments/handyrl/best/handyrl_perfect_info_color_aware_resnet_4blk_20260204_145150_RECOVERED/best_model.pth",
+    "own_good_safety_penalty": 0.15,
+    "n_games": 9800,
+    "exhaustive": true,
+    "wins": 8855,
+    "losses": 210,
+    "draws": 735,
+    "score": 0.9410714285714286,
+    "loss_rate": 0.02142857142857143,
+    "elapsed_sec": 92.2,
+    "label": "recovered(pen=0.15)  現行"
+  },
+  {
+    "estimator": "OracleColorEstimator",
+    "policy": "experiments/handyrl/best/handyrl_perfect_info_color_aware_resnet_4blk_20260204_145150_RECOVERED/best_model.pth",
+    "own_good_safety_penalty": 0.6,
+    "n_games": 9800,
+    "exhaustive": true,
+    "wins": 8854,
+    "losses": 210,
+    "draws": 736,
+    "score": 0.9410204081632653,
+    "loss_rate": 0.02142857142857143,
+    "elapsed_sec": 92.2,
+    "label": "recovered(pen=0.6)   調整版"
+  },
+  {
+    "estimator": "OracleColorEstimator",
+    "policy": "experiments/handyrl/color_aware/handyrl_perfect_info_color_aware_resnet_4blk_20260204_124419/best_model.pth",
+    "own_good_safety_penalty": 0.15,
+    "n_games": 9800,
+    "exhaustive": true,
+    "wins": 8981,
+    "losses": 265,
+    "draws": 554,
+    "score": 0.9446938775510204,
+    "loss_rate": 0.027040816326530614,
+    "elapsed_sec": 66.5,
+    "label": "color_aware_124419   候補A"
+  },
+  {
+    "estimator": "OracleColorEstimator",
+    "policy": "experiments/handyrl/color_aware/handyrl_perfect_info_color_aware_asymmetric_resnet_4blk_20260716_000531/best_model.pth",
+    "own_good_safety_penalty": 0.15,
+    "n_games": 9800,
+    "exhaustive": true,
+    "wins": 8442,
+    "losses": 156,
+    "draws": 1202,
+    "score": 0.9227551020408163,
+    "loss_rate": 0.015918367346938776,
+    "elapsed_sec": 107.7,
+    "label": "asym_defensive       守備版"
+  },
+  {
+    "estimator": "OracleColorEstimator",
+    "policy": "experiments/handyrl/color_aware/handyrl_perfect_info_color_aware_asymmetric_resnet_4blk_20260716_010420/best_model.pth",
+    "own_good_safety_penalty": 0.15,
+    "n_games": 9800,
+    "exhaustive": true,
+    "wins": 9131,
+    "losses": 252,
+    "draws": 417,
+    "score": 0.9530102040816326,
+    "loss_rate": 0.025714285714285714,
+    "elapsed_sec": 75.7,
+    "label": "asym_nodraw          守備+引分罰"
+  }
+]

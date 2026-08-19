@@ -1,0 +1,13 @@
+holdout: 4007 サンプル
+
+推定器                        piece_acc    Top5保持  true_mass   N_eff    score
+MLPColorEstimator             59.34%    21.01%      5.83%   47.88   0.7781
+ResNetColorEstimator          62.61%    20.64%      6.07%   51.14   0.7629
+QuantumColorEstimator         59.22%    18.22%      5.64%   52.97   0.7752
+HistoryGRUColorEstimator      60.56%    22.06%      6.04%   49.55   0.7888
+
+■ ゲーム score との順位一致（全 6 ペア）
+  piece_accuracy     3/6  順位=['ResNet', 'HistoryGRU', 'MLP', 'Quantum']
+  topk_recall        5/6  順位=['HistoryGRU', 'MLP', 'ResNet', 'Quantum']
+  true_mass          3/6  順位=['ResNet', 'HistoryGRU', 'MLP', 'Quantum']
+  effective_worlds   2/6  順位=['Quantum', 'ResNet', 'HistoryGRU', 'MLP']

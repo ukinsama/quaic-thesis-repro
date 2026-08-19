@@ -1,0 +1,41 @@
+
+===== OLD_recovered  (177s) =====
+  OracleColorEstimator(上界) score=0.928  W-L-D=267-10-23
+  MLPColorEstimator      score=0.772  W-L-D=217-54-29
+  ResNetColorEstimator   score=0.775  W-L-D=213-48-39
+  QuantumColorEstimator  score=0.725  W-L-D=205-70-25
+  HistoryGRUColorEstimator score=0.803  W-L-D=225-43-32
+  LowParamColorEstimator score=0.492  W-L-D=78-83-139
+  RandomColorEstimator(下界) score=0.500  （定義）
+
+===== NEW_asym  (167s) =====
+  OracleColorEstimator(上界) score=0.940  W-L-D=268-4-28
+  MLPColorEstimator      score=0.737  W-L-D=206-64-30
+  ResNetColorEstimator   score=0.732  W-L-D=201-62-37
+  QuantumColorEstimator  score=0.705  W-L-D=200-77-23
+  HistoryGRUColorEstimator score=0.782  W-L-D=222-53-25
+  LowParamColorEstimator score=0.548  W-L-D=121-92-87
+  RandomColorEstimator(下界) score=0.500  （定義）
+
+===== NEW_offense_nodraw  (80s) =====
+  OracleColorEstimator(上界) score=0.950  W-L-D=280-10-10
+  MLPColorEstimator      score=0.858  W-L-D=256-41-3
+  ResNetColorEstimator   score=0.855  W-L-D=255-42-3
+  QuantumColorEstimator  score=0.783  W-L-D=232-62-6
+  HistoryGRUColorEstimator score=0.852  W-L-D=253-42-5
+  LowParamColorEstimator score=0.685  W-L-D=200-89-11
+  RandomColorEstimator(下界) score=0.500  （定義）
+
+=== 方策の因果的色感度: Oracle vs AntiOracle（各1500戦, 相手は常に Random+Top1）===
+  OLD_recovered  Oracle(真の色)          score=0.942 ±0.010  W-L-D=1356-31-113
+  OLD_recovered  AntiOracle(反転色)      score=0.310 ±0.021  W-L-D=352-922-226
+  → OLD_recovered の色感度 = 0.632 ± 0.023
+
+  NEW_asym       Oracle(真の色)          score=0.934 ±0.009  W-L-D=1320-18-162
+  NEW_asym       AntiOracle(反転色)      score=0.234 ±0.019  W-L-D=249-1046-205
+  → NEW_asym の色感度 = 0.700 ± 0.021
+
+  NEW_offense_nodraw Oracle(真の色)          score=0.956 ±0.009  W-L-D=1409-42-49
+  NEW_offense_nodraw AntiOracle(反転色)      score=0.402 ±0.024  W-L-D=584-878-38
+  → NEW_offense_nodraw の色感度 = 0.554 ± 0.026
+

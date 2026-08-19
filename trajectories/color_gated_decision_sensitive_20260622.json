@@ -1,0 +1,160 @@
+{
+  "run_id": "color_gated_decision_sensitive_20260622",
+  "timestamp": "2026-06-22T02:26:10Z",
+  "files": {
+    "train": "/home/ks/Qugeister_clean/trajectories/color_gated_decision_sensitive_20260622_train_300.pkl",
+    "holdout": "/home/ks/Qugeister_clean/trajectories/color_gated_decision_sensitive_20260622_holdout_80.pkl",
+    "metadata": "/home/ks/Qugeister_clean/trajectories/color_gated_decision_sensitive_20260622.json"
+  },
+  "setup": {
+    "policy_path": "experiments/handyrl/best/handyrl_perfect_info_color_aware_resnet_4blk_20260204_145150_RECOVERED/best_model.pth",
+    "policy_arch": "ColorGatedResNetPolicy",
+    "color_gate_scale": 1.0,
+    "adapter": "Top1 for Random/Oracle; TopK(k=5) for learned estimators",
+    "agents": [
+      "C-03-cal",
+      "DeploymentMLP-cal",
+      "OracleColor",
+      "RandomColor"
+    ],
+    "pair_schedule": [
+      [
+        "C-03-cal",
+        "RandomColor"
+      ],
+      [
+        "DeploymentMLP-cal",
+        "RandomColor"
+      ],
+      [
+        "C-03-cal",
+        "DeploymentMLP-cal"
+      ],
+      [
+        "C-03-cal",
+        "OracleColor"
+      ],
+      [
+        "DeploymentMLP-cal",
+        "OracleColor"
+      ],
+      [
+        "RandomColor",
+        "OracleColor"
+      ],
+      [
+        "C-03-cal",
+        "C-03-cal"
+      ]
+    ],
+    "max_turns": 200,
+    "epsilon": 0.02,
+    "train_games": 300,
+    "holdout_games": 80,
+    "seed": 20260622,
+    "device": "cpu",
+    "train_oversample_important": true,
+    "holdout_oversample_important": false
+  },
+  "summary": {
+    "train": {
+      "games": 300,
+      "stored_samples": 25061,
+      "raw_samples": 14685,
+      "samples_by_side": {
+        "A": 12628,
+        "B": 12433
+      },
+      "important_raw_samples": 9654,
+      "important_stored_samples": 20030,
+      "capture_available_samples": 9193,
+      "own_good_escape_available_samples": 53,
+      "enemy_escape_threat_samples": 1082,
+      "avg_turns": 48.79,
+      "winner_counts": {
+        "A": 171,
+        "B": 120,
+        "Draw": 9
+      },
+      "pair_counts": {
+        "C-03-cal vs RandomColor": 22,
+        "DeploymentMLP-cal vs RandomColor": 22,
+        "C-03-cal vs DeploymentMLP-cal": 22,
+        "C-03-cal vs OracleColor": 22,
+        "DeploymentMLP-cal vs OracleColor": 22,
+        "RandomColor vs OracleColor": 22,
+        "C-03-cal vs C-03-cal": 42,
+        "RandomColor vs C-03-cal": 21,
+        "RandomColor vs DeploymentMLP-cal": 21,
+        "DeploymentMLP-cal vs C-03-cal": 21,
+        "OracleColor vs C-03-cal": 21,
+        "OracleColor vs DeploymentMLP-cal": 21,
+        "OracleColor vs RandomColor": 21
+      },
+      "seconds": 19.26
+    },
+    "holdout": {
+      "games": 80,
+      "stored_samples": 4007,
+      "raw_samples": 4007,
+      "samples_by_side": {
+        "A": 2020,
+        "B": 1987
+      },
+      "important_raw_samples": 2628,
+      "important_stored_samples": 2628,
+      "capture_available_samples": 2477,
+      "own_good_escape_available_samples": 9,
+      "enemy_escape_threat_samples": 330,
+      "avg_turns": 49.975,
+      "winner_counts": {
+        "B": 46,
+        "A": 32,
+        "Draw": 2
+      },
+      "pair_counts": {
+        "C-03-cal vs RandomColor": 6,
+        "DeploymentMLP-cal vs RandomColor": 6,
+        "C-03-cal vs DeploymentMLP-cal": 6,
+        "C-03-cal vs OracleColor": 6,
+        "DeploymentMLP-cal vs OracleColor": 6,
+        "RandomColor vs OracleColor": 6,
+        "C-03-cal vs C-03-cal": 11,
+        "RandomColor vs C-03-cal": 6,
+        "RandomColor vs DeploymentMLP-cal": 6,
+        "DeploymentMLP-cal vs C-03-cal": 6,
+        "OracleColor vs C-03-cal": 5,
+        "OracleColor vs DeploymentMLP-cal": 5,
+        "OracleColor vs RandomColor": 5
+      },
+      "seconds": 5.3
+    }
+  },
+  "calibration": {
+    "DeploymentMLP-cal": {
+      "scale": 0.12,
+      "bias": 0.5,
+      "strength": 1.0
+    },
+    "C-03-cal": {
+      "scale": 0.05,
+      "bias": -2.0,
+      "strength": 0.2
+    }
+  },
+  "val_acc": {
+    "Oracle": 1.0,
+    "Random": 0.5,
+    "DeploymentMLP": 0.5494894981384277,
+    "C-03": 0.7840600625365083
+  },
+  "provenance": {
+    "quaic_commit": "c58c674f4e056c1374f63a1a9291ca8aae43c250",
+    "quaic_dirty": true,
+    "qugeister_clean_path": "/home/ks/Qugeister_clean",
+    "qugeister_clean_commit": "25a894fbf3397225c4fc8c686ceae8edf6aba099",
+    "qugeister_clean_dirty": true,
+    "torch": "2.10.0+cpu",
+    "numpy": "2.4.1"
+  }
+}

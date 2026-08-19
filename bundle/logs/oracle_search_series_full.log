@@ -1,0 +1,4 @@
+[  969.2s] search_3ply      score=0.608 W-L-D=(114, 49, 137)  (修論の値: 崩壊（修論: 3手読み paranoid は崩壊）)
+[   34.6s] safe_veto_2ply   score=0.525 W-L-D=(70, 55, 175)  (修論の値: 0.525)
+[  371.1s] guarded_margin1  score=0.920 W-L-D=(271, 19, 10)  (修論の値: 0.920 / 19敗)
+[write] /home/ks/QuAic/backend/data/experiments/oracle_search_series_full.json

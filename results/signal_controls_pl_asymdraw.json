@@ -1,0 +1,92 @@
+{
+  "run_id": "signal_controls",
+  "setup": {
+    "estimators": [
+      "MLPColorEstimator",
+      "ResNetColorEstimator",
+      "QuantumColorEstimator",
+      "HistoryGRUColorEstimator"
+    ],
+    "temperature": 1.0,
+    "n_games": 300,
+    "seed": 42,
+    "policy": "experiments/handyrl/color_aware/handyrl_perfect_info_color_aware_asymmetric_resnet_4blk_20260716_010420/best_model.pth",
+    "own_good_safety_penalty": 0.15,
+    "note": "inverted = good<->bad flipped; RandomColorEstimator baseline = 0.5"
+  },
+  "provenance": {
+    "quaic_commit": "9b6c13c024f153e99c9d589dcdc6d55289c21be5",
+    "quaic_dirty": true,
+    "torch": "2.10.0+cpu"
+  },
+  "results": [
+    {
+      "estimator": "MLPColorEstimator",
+      "normal": {
+        "score": 0.7316666666666667,
+        "wins": 214,
+        "losses": 75,
+        "draws": 11,
+        "n_games": 300
+      },
+      "inverted": {
+        "score": 0.65,
+        "wins": 185,
+        "losses": 95,
+        "draws": 20,
+        "n_games": 300
+      }
+    },
+    {
+      "estimator": "ResNetColorEstimator",
+      "normal": {
+        "score": 0.7933333333333333,
+        "wins": 230,
+        "losses": 54,
+        "draws": 16,
+        "n_games": 300
+      },
+      "inverted": {
+        "score": 0.63,
+        "wins": 176,
+        "losses": 98,
+        "draws": 26,
+        "n_games": 300
+      }
+    },
+    {
+      "estimator": "QuantumColorEstimator",
+      "normal": {
+        "score": 0.7933333333333333,
+        "wins": 231,
+        "losses": 55,
+        "draws": 14,
+        "n_games": 300
+      },
+      "inverted": {
+        "score": 0.6316666666666667,
+        "wins": 181,
+        "losses": 102,
+        "draws": 17,
+        "n_games": 300
+      }
+    },
+    {
+      "estimator": "HistoryGRUColorEstimator",
+      "normal": {
+        "score": 0.7916666666666666,
+        "wins": 231,
+        "losses": 56,
+        "draws": 13,
+        "n_games": 300
+      },
+      "inverted": {
+        "score": 0.635,
+        "wins": 179,
+        "losses": 98,
+        "draws": 23,
+        "n_games": 300
+      }
+    }
+  ]
+}
