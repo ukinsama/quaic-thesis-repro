@@ -41,7 +41,6 @@ imperfect-information game Geister.
 
 - 公開デモ: https://quaic.up.railway.app
 - 学習ツールキット（Colab対応）: https://github.com/ukinsama/Qugeister
-- 実験リポジトリ: https://github.com/ukinsama/Qugeister_clean
 
 ## License
 
